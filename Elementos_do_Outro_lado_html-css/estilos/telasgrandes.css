@@ -1,0 +1,35 @@
+div.conteudo {
+    max-width: 750px;
+    margin: auto;
+    position: relative;
+    top: 40px;
+}
+div.background_elemento {
+    width: 100vw;
+    height: 50vh;
+}
+section {
+    background: black;
+    width: 100vw;
+    height: 50vh;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+img {
+    display: block;
+    height: 30vh;
+    margin: auto;
+    position: absolute;
+}
+p {
+    display: block;
+    max-width: 350px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 16px;
+    line-height: 1.2em;
+    margin-top: 2vh;
+    right: 50px;
+    top: 20px;
+    position: absolute;
+}
