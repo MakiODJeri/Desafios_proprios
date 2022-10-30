@@ -1,0 +1,24 @@
+:root {
+    --cor0: ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif
+}
+body {
+    background: black url(../imagens/Ordo.jpeg) center center no-repeat fixed;
+    background-size: cover;
+}
+header {
+    background: transparent;
+}
+header > div > img {
+    display: block;
+    width: ;
+    height: ;
+}
+header > span {
+    display: none;
+}
