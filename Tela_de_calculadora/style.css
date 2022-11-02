@@ -1,0 +1,63 @@
+:root {
+    --cor0: rgb(36, 36, 36);
+    --cor1: #5EBFC0;
+    --cor2: #FFAB2D;
+    --cor3: #556846;
+    --cor4: rgb(41, 41, 41);
+    --cor5: #313f26;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    color: white;
+}
+body,html {
+    width: 100vw;
+    height: 100vh;
+}
+section {
+    max-width: 500px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: flex-end;
+    row-gap: 10px;
+    padding: 50px 10px 20px 10px;
+    background: var(--cor0);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 10vh;
+}
+div {
+    width: 100px;
+    height: 90px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+    background: var(--cor4);
+}
+#tela {
+    grid-column: 1/5;
+    width: 95%;
+    box-shadow: inset 4px 4px var(--cor5);
+    background: var(--cor3);
+}
+#botao-on {
+    border-radius: 50%;
+    background: var(--cor1);
+}
+.ovo {
+    width: 90px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--cor2);
+    font-size: .9em;
+}
+#mais {
+    grid-row: 6/8;
+    grid-column: 4;
+    height: 190px;
+    background: var(--cor1);
+    font-size: 3em;
+}
