@@ -19,7 +19,7 @@ body {
 }
 #cartao {
     width: 98vw;
-    height: 300px;
+    height: 280px;
     background: var(--cor1) url(../imagens/fundo_cartao.jpg) center center no-repeat scroll;
     background-size: contain;
     border-radius: 10px;
@@ -31,14 +31,16 @@ body {
 #informacoes {
     width: 40vw;
     padding-left: 20px;
+    font-size: .9em;
 }
 .verde {
     margin: 0 0 10px 10px;
     color: var(--cor2);
 }
 #foto {
-    width: 200px;
-    height: 250px;
+    width: 120px;
+    height: 220px;
+    padding: 10px;
     border: 4px solid var(--cor0);
     margin-right: 20px;
     background: var(--cor3);
@@ -55,14 +57,35 @@ body {
 .agente {
     width: 100px;
     height: 100px;
-    background: var(--cor2);
     border: 4px solid var(--cor4);
     border-radius: 50%;
+}
+.agente:active {
+    border: 1px solid var(--cor3);
+    transition-duration: .3s;
+}
+#um { 
+    background: var(--cor2) url(../imagens/1um.png) center center;
+    background-size: contain;
+}
+#dois{
+    background: var(--cor2) url(../imagens/2dois.png) center center;
+    background-size: contain;
+}
+#tres{
+    background: var(--cor2) url(../imagens/3tres.png) center center;
+    background-size: contain;
+}
+#quatro{
+    background: var(--cor2) url(../imagens/4quatro.png) center center;
+    background-size: contain;
 }
 #cinco {
     grid-column-start: 1;
     grid-column-end: 3;
     margin: auto;
+    background: var(--cor2) url(../imagens/5cinco.png) center center;
+    background-size: contain;
 }
 footer {
     text-align: center;
