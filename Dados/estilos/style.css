@@ -1,0 +1,96 @@
+:root {
+    --cor0: #A5A5A5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    width: 100vw;
+    height: 90vw;
+    background: var(--cor0);
+}
+header {
+    font-size: 2em;
+    text-align: center;
+    margin: 30px 0;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+section {
+    width: 90vw;
+    margin: auto;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#tela {
+    width: 285px;
+    border: 1px solid black;
+    height: 285px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding: 15px;
+}
+strong {
+    font-size: 3em;
+}
+#dados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    width: 300px;
+    margin: 0 auto 30px auto;
+}
+.d {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.1em;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+#d4 {
+    background: transparent url(../imagens/dados-d4.png) center center no-repeat scroll;
+    background-size: contain;
+}
+#d6 {
+    background: transparent url(../imagens/dados-d6.png) center center no-repeat scroll;
+    background-size: contain;
+}
+#d8 {
+    background: transparent url(../imagens/dados-d8.png) center center no-repeat scroll;
+    background-size: contain;
+}
+#d10 {
+    background: transparent url(../imagens/dados-d10.png) center center no-repeat scroll;
+    background-size: contain;
+}
+#d12 {
+    background: transparent url(../imagens/dados-d12.png) center center no-repeat scroll;
+    background-size: contain;
+}
+#d20 {
+    background: transparent url(../imagens/dados-d20.png) center center no-repeat scroll;
+    background-size: contain;
+}
+footer {
+    margin: 15px 0;
+    padding-bottom: 30px;
+    font-size: .9em;
+    text-align: center;
+}
+footer > p > a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
