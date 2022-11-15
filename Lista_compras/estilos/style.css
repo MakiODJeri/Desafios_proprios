@@ -40,13 +40,15 @@ footer {
     width: 80vw;
     margin: 30px auto 0 auto;
     padding: 15px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
 }
 ol {
-    width: 300px;
+    width: 200px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-width: 150px;
 }
 ol > li {
     margin: 5px 0;

@@ -16,5 +16,6 @@ function remover() {
     let lista = document.querySelector('ol#items')
     let tantos = document.querySelector('ol#items').value
     lista.removeChild(lista.children[num])
+    document.getElementbyId('rm').value = ''
     document.getElementById('rm').focus()
 }
