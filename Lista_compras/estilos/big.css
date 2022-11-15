@@ -1,0 +1,13 @@
+body {
+    background: url(../imagens/fundo-madeira-ingredientes.jpg) center center no-repeat scroll;
+    background-size: cover;
+}
+section {
+    width: 600px;
+}
+#lista {
+    width: 500px;
+}
+#adrm {
+    width: 500px;
+}
