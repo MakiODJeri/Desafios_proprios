@@ -1,5 +1,6 @@
 :root {
-    --cor0: #A5A5A5;
+    --cor0: #D7E3EC;
+    --cor1: #1E557D;
 }
 * {
     margin: 0;
@@ -16,8 +17,8 @@ header {
     font-size: 2em;
     text-align: center;
     margin: 30px 0;
-    color: white;
-    text-shadow: 2px 2px black;
+    color: var(--cor1);
+    text-shadow: 2px 2px white;
 }
 section {
     width: 90vw;
@@ -31,13 +32,37 @@ section {
     border: 1px solid black;
     height: 285px;
     margin: 30px auto;
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
     padding: 15px;
 }
+#tela1 {
+    width: 285px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 3.1em;
+}
+#tela2 {
+    width: 285px;
+    height: 85px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#resposta {
+    width: 120px; 
+    height: 120px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    background: center center no-repeat scroll;
+    background-size: contain;
+}
 strong {
-    font-size: 3em;
+    font-size: 3.1em;
 }
 #dados {
     display: grid;
@@ -58,27 +83,27 @@ strong {
     text-shadow: 2px 2px black;
 }
 #d4 {
-    background: transparent url(../imagens/dados-d4.png) center center no-repeat scroll;
+    background: transparent url(../imagens/dados-d4\(2\).png) center center no-repeat scroll;
     background-size: contain;
 }
 #d6 {
-    background: transparent url(../imagens/dados-d6.png) center center no-repeat scroll;
+    background: transparent url(../imagens/dados-d6\(2\).png) center center no-repeat scroll;
     background-size: contain;
 }
 #d8 {
-    background: transparent url(../imagens/dados-d8.png) center center no-repeat scroll;
+    background: transparent url(../imagens/dados-d8\(2\).png) center center no-repeat scroll;
     background-size: contain;
 }
 #d10 {
-    background: transparent url(../imagens/dados-d10.png) center center no-repeat scroll;
+    background: transparent url(../imagens/dados-d10\(2\).png) center center no-repeat scroll;
     background-size: contain;
 }
 #d12 {
-    background: transparent url(../imagens/dados-d12.png) center center no-repeat scroll;
+    background: transparent url(../imagens/dados-d12\(2\).png) center center no-repeat scroll;
     background-size: contain;
 }
 #d20 {
-    background: transparent url(../imagens/dados-d20.png) center center no-repeat scroll;
+    background: transparent url(../imagens/dados-d20\(2\).png) center center no-repeat scroll;
     background-size: contain;
 }
 footer {
@@ -89,7 +114,7 @@ footer {
 }
 footer > p > a {
     text-decoration: none;
-    color: white;
+    color: var(--cor1);
 }
 a:hover {
     text-decoration: underline;
