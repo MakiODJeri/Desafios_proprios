@@ -1,0 +1,14 @@
+header {
+    margin: 15vh 0 30px 0;
+}
+section {
+    width: 400px;
+}
+#escolha {
+    width: 300px;
+    margin: 0 auto 15px auto;
+}
+#resultados {
+    width: 300px;
+    margin: auto;
+}
