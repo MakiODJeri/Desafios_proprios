@@ -13,21 +13,24 @@
     <main>
         <section>
             <div id="escolha">
-                <input class="items" type="button" value="&#x1FAA8" onclick="recebe()">
+                <input class="items" type="button" value="&#x1FAA8" onclick="recebe(1)">
                 <input class="items" type="button" value="&#x1F4C4
-                " onclick="recebe()">
-                <input class="items" type="button" value="&#x2702" onclick="recebe()">
+                " onclick="recebe(2)">
+                <input class="items" type="button" value="&#x2702" onclick="recebe(3)">
                 <input id="jogar" type="button" value="Jokenpô" onclick="joga()">
             </div>
             <div id="resultados">
                 <div id="you">
-                    <div class="iden"><span>YOU: <strong class="info" id="vtyou">0</strong> </span></div>
-                    <div class="res"><div class="exem">&#x2753</div></div>
+                    <div class="iden"><span>YOU: <strong class="info" id="ptyou">0</strong> </span></div>
+                    <div class="res"><div class="exem" id="exemyou">&#x2753</div></div>
                 </div>
                 <div id="cpu">
-                    <div class="iden"><span>CPU: <strong class="info" id="vtcpu">0</strong> </span></div>
-                    <div class="res"><div class="exem">&#x2753</div></div>
+                    <div class="iden"><span>CPU: <strong class="info" id="ptcpu">0</strong> </span></div>
+                    <div class="res"><div class="exem" id="exemcpu">&#x2753</div></div>
                 </div>
+            </div>
+            <div id="aux">
+                <div class="auxdiv"><input class="botao" type="button" value="limpar" onclick="limpar()"></div>
             </div>
         </section>
     </main>
