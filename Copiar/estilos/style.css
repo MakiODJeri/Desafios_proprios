@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: grey;
+}
+section {
+    width: 80vw;
+    border: 3px solid black;
+    padding: 30px;
+    margin: 30px auto 30px auto;
+    background: white;
+}
+div {
+    border: 2px solid black;
+    width: 300px;
+    margin: 5px auto 0 auto;
+    background: rgba(211, 211, 211, 0.661);
+    text-align: center;
+}
+div.mons {
+    padding: 15px;
+}
+div.monsteam {
+    padding: 55px 15px;
+}
+.marca {
+    background: darkred;
+    color: white;
+    border: 2px solid red;
+}
+input {
+    display: block;
+    margin: auto;
+    padding: 2px 5px;
+    border: 2px dashed black;
+}
+footer {
+    font-size: .9em;
+    text-align: center;
+    color: white;
+    padding: 0 0 15px 0;
+    transform: translateY(-15px);
+}
+footer > p > a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
