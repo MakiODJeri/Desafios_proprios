@@ -10,6 +10,11 @@ section {
 div.monsteam {
     padding: 45px 15px;
 }
+.ajust {
+    width: 350px;
+    background: transparent;
+    border: none;
+}
 footer {
     transform: translateY(22vh);
 }
