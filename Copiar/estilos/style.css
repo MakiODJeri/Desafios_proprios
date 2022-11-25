@@ -32,6 +32,11 @@ div.monsteam {
     color: white;
     border: 2px solid red;
 }
+.ajust {
+    width: 350px;
+    background: transparent;
+    border: none;
+}
 input {
     display: block;
     margin: auto;

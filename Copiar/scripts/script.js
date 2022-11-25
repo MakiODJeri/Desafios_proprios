@@ -37,7 +37,6 @@ const remover=(el)=>{
             guarda.splice(c,1)
         }
     }
-    
 }
 const box = [...document.querySelectorAll('.mons')]
 const team = [...document.querySelectorAll('.monsteam')]
@@ -71,9 +70,11 @@ botao.addEventListener('mouseleave',()=>{
 })
 botao.addEventListener('click',()=>{
     team.map((el)=>{
-        el.innerHTML = guarda[c]
-        remover(el)
-        c++
-
+        el.innerHTML = guarda[0]
+        guarda.shift()
+        console.log(guarda)
+    })
+    box.map((el)=>{
+        el.classList.remove('marca')
     })
 })

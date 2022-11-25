@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    transform: translateY(20vh);
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.monsteam {
+    padding: 45px 15px;
+}
+footer {
+    transform: translateY(22vh);
+}
