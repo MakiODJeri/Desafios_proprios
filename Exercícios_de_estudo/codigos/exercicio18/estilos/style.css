@@ -10,7 +10,7 @@ div {
     height: 100px;
     border: 2px solid black;
 }
-.colors {
+.cores {
     font-size: 0;
 }
 #bla {
@@ -38,4 +38,6 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    text-shadow: 2px 2px black;
 }
