@@ -13,7 +13,7 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 45px;
     padding: 45px 20px;
-    transform: translateY(15vh);
+    transform: translateY(8vh);
 }
 div {
     width: 50px;
@@ -25,4 +25,10 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+input {
+    display: block;
+    margin: 15px auto 0 auto;
+    padding: 4px;
+    transform: translateY(8vh);
 }
