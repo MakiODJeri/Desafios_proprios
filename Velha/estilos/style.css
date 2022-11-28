@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#jogo {
+    width: 91.5vw;
+    height: 91.5vw;
+    margin: 30px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.quad{
+    width: 30vw;
+    height: 30vw;
+    border: 2px solid black;
+}
+#q1 {
+    border-top: 0;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 0;
+}
+#q2 {
+    border-top: 0;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+#q3 {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+#q4 {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 0;
+}
+#q6 {
+    border-top: 2px solid black;
+    border-right: 0;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+#q7 {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 0;
+    border-left: 0;
+}
+#q8 {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 0;
+    border-left: 2px solid black;
+}
+#q9 {
+    border-top: 2px solid black;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 2px solid black;
+}
+#info {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 30px;
+}
+#info > p > strong {
+    font-size: 2em;
+}
+input {
+    display: block;
+    margin: auto;
+    font-size: 1.1em;
+    padding: 2px;
+    margin-top: 30px;
+}
