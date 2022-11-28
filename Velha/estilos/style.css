@@ -79,3 +79,16 @@ input {
     padding: 2px;
     margin-top: 30px;
 }
+footer {
+    text-align: center;
+    font-size: .9em;
+    margin-top: 15px;
+    padding: 15px 0 30px 0;
+}
+footer > p > a {
+    color: rgb(119, 102, 102);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
