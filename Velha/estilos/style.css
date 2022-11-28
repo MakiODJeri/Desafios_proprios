@@ -92,3 +92,11 @@ footer > p > a {
 a:hover {
     text-decoration: underline;
 }
+.x {
+    background: transparent url(../imagens/x.png) center center no-repeat scroll;
+    background-size: contain;
+}
+.o {
+    background: transparent url(../imagens/o.png) center center no-repeat scroll;
+    background-size: contain;
+}
