@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 850px;
+    margin: auto;
+    transform: translateY(10vh);
+}
+section {
+    width: 350px;
+    height: 600px;
+    border: 4px solid black;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+#opcoes {
+    width: 300px;
+    height: 300px;
+    margin-top: 150px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    row-gap: 15px;
+}
+#opcoes > p {
+    font-size: 1.2em;
+}
+input {
+    height: 1em;
+    padding: 1em;
+}
+.botoes {
+    width: 12em;
+    height: 3em;
+    border: 2px solid blue;
+    border-radius: 10px;
+    margin: auto;
+    padding: 0;
+    background-color: rgb(7, 7, 105);
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+#lista {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+}
+.cursos {
+    width: 300px;
+    height: 4em;
+    background: grey;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
