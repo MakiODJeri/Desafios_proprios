@@ -28,21 +28,28 @@ section {
     justify-content: center;
     text-align: center;
     row-gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 #opcoes > p {
     font-size: 1.2em;
+    grid-row: 1;
+    grid-column: 1/6;
 }
 input {
     height: 1em;
     padding: 1em;
     cursor: pointer;
+    grid-row: 2;
+    grid-column: 1/6;
 }
 label {
     cursor: pointer;
 }
 .botoes {
-    width: 12em;
-    height: 3em;
+    grid-row: 3;
+    height: 4em;
+    width: 4em;
     border: 2px solid blue;
     border-radius: 10px;
     margin: auto;
@@ -50,6 +57,26 @@ label {
     background-color: rgb(7, 7, 105);
     color: white;
     text-shadow: 1px 1px 0px black;
+}
+#cima {
+    grid-column: 3/4;
+    transform: translateX(-30px);
+}
+#baix {
+    grid-column: 5/6;
+    transform: translateX(-30px);
+}
+#adci {
+    grid-row: 3;
+    width: 6em;
+    grid-column: 1/2;
+    transform: translate(30px);
+    
+}
+#rmvr {
+    width: 15em;
+    grid-row: 4;
+    grid-column: 1/6;
 }
 #lista {
     width: 300px;
