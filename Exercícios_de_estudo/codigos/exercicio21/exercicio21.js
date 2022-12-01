@@ -28,15 +28,18 @@ const adclist=(nome)=>{
         labl.htmlFor = radi.id
         labl.innerText = nome
         labl.style.padding = '30px'
+        radi.style.marginRight = '30px'
         item.appendChild(labl)
         item.appendChild(radi)
         item.setAttribute('class','cursos')
         console.log(item)
-        list.appendChild(item)   
+        list.appendChild(item)  
     }
 }
 adci.addEventListener('click',()=>{
     const nome = cxtx.value
+    cxtx.value = ''
+    cxtx.focus()
     const curs = [...document.querySelectorAll('.cursos')]
     if (nome.length == 0) {
         window.alert('Digite algum nome para ser adicionado.')
@@ -45,4 +48,24 @@ adci.addEventListener('click',()=>{
     } else {
         adclist(nome)
     }
-}) //adicionar um novo curso a lista 
+}) //adicionar um novo curso a lista
+const rmvlist=(nome)=>{
+    const curs = [...document.querySelectorAll('.cursos')]  
+    curs.filter((el)=>{
+        if (el.innerText == nome) {
+            list.removeChild(el)
+        }
+    })
+}
+rmvr.addEventListener('click',()=>{
+    const curs = [...document.querySelectorAll('.cursos')]
+    const radioc = document.querySelector('input[name="curs"]:checked')
+    if (curs.length > 0 && radioc) {
+        const cur = document.querySelector('input[name="curs"]:checked').parentNode.innerText
+        rmvlist(cur)
+    } else if (curs.length == 0) {
+        window.alert('Você precisa adicionar algum curso a lista para remover.')
+    } else {
+        window.alert('Marque algum dos cursos da lista a direita para remover.')
+    }
+})//remover um dos cursos que estão na lista
