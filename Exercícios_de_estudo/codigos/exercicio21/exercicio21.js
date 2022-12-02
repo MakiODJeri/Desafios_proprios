@@ -38,7 +38,6 @@ const adclist=(nome)=>{
         adpos(item)
     }
 }
-
 const adpos=(item)=>{
     const tmnh = [...list.children] 
     if (document.querySelector('input[name="curs"]:checked')) {
@@ -47,18 +46,14 @@ const adpos=(item)=>{
             list.insertBefore(item, curpos)
             console.log(list.children)
         } else {
-            if (false) {
-            } else {
-                const prox = curpos.nextSibling
-                list.insertBefore(item, prox)
-            }
+            const prox = curpos.nextSibling
+            list.insertBefore(item, prox)
         }
     } else {
         list.appendChild(item)
     }
 
 }
-
 adci.addEventListener('click',()=>{
     const nome = cxtx.value
     cxtx.value = ''
@@ -72,9 +67,6 @@ adci.addEventListener('click',()=>{
         adclist(nome)
     }
 }) //adicionar um novo curso a lista
-
-
-
 const rmvlist=(nome)=>{
     const curs = [...document.querySelectorAll('.cursos')]  
     curs.filter((el)=>{
