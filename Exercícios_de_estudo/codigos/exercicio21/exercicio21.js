@@ -50,7 +50,12 @@ const adpos=(item)=>{
             list.insertBefore(item, prox)
         }
     } else {
-        list.appendChild(item)
+        if (idite == 1 && list.children.length > 0) {
+            const prim = list.children[0]
+            list.insertBefore(item, prim)
+        } else {
+            list.appendChild(item)
+        }
     }
 
 }
