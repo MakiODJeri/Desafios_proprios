@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    border: 2px solid black;
+    max-width: 85vw;
+    padding: 5vw;
+    margin: 30px auto 0 auto;
+    transform: translateY(-15px);
+}
+div#algo {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 15px;
+}
+#nome {
+    grid-column: 1/8;
+}
+#mais {
+
+}
+#menos {
+    
+}
+#rmvr {
+    grid-row: 3;
+    grid-column: 2/4;
+}

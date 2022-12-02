@@ -30,6 +30,7 @@ const adclist=(nome)=>{
         labl.htmlFor = radi.id
         labl.innerText = nome
         labl.style.padding = '30px'
+        
         radi.style.marginRight = '30px'
         item.appendChild(labl)
         item.appendChild(radi)
