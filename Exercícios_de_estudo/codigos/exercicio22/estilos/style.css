@@ -54,3 +54,6 @@ section {
     justify-content: center;
     align-items: center;
 }
+.marca {
+    border: 5px solid black;
+}
