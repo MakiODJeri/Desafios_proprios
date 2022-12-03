@@ -16,12 +16,15 @@ div#algo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 15px;
+    font-size: 1.1em;
 }
 #nome {
     grid-column: 1/8;
+    height: 1em;
+    padding: 1em;
 }
 #mais {
-
+    grid-column: ;
 }
 #menos {
     
