@@ -1,0 +1,12 @@
+section {
+    width: 500px;
+    margin-top: 15vh;
+}
+#valores {
+     transform: translateY(-15vh);
+}
+.vals {
+    width:  90px;
+    height: 90px;
+    padding: 30px;
+}

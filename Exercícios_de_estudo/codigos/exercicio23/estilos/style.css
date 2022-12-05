@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    width: 80vw;
+    padding: 5vw;
+    margin: auto;
+    margin-top: 30px;
+    transform: translateY(-15px);
+}
+#mostrar {
+    border: 2px solid black;
+    height: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px inset black;
+}
+#valores {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 13px;
+}
+.vals {
+    width: 13vw;
+    height: 13vw;
+    padding: 5vw;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marca {
+    border: 2px solid red;
+}
