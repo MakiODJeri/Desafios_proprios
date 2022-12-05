@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 80vw;
+    padding: 5vw;
+    margin: 30px auto 0 auto;
+    transform:translateY(-15px);
+}
+#secopc > div {
+    padding: 5px;
+    font-size: 1.1em;
+}
+#mina, #minv {
+    transform: translateX(34px);
+}
+.mvals {
+    height: 1.5em;
+    width: 1.5em;
+    font-size: .9em;
+    transform: translateX(30px);
+}
+#divmin {
+    margin-bottom: 15px;
+}
+#divmax {
+    margin-bottom: 30px;
+}
+#show {
+    padding: .1em .2em;
+    font-size: 1.1em;
+}
+#secmos {
+    height: 50vh;
+}
