@@ -16,16 +16,21 @@ section {
     padding: 5px;
     font-size: 1.1em;
 }
-#mina, #minv {
-    transform: translateX(34px);
-}
 .mvals {
+    display: flex;
+    column-gap: 5px;
+    width: 100px;
+}
+.mvals > input {
     height: 1.5em;
     width: 1.5em;
     font-size: .9em;
-    transform: translateX(30px);
+    text-align: center;
 }
-#divmin {
+#divmin, #divmax, #divttl {
+    display: flex;
+}
+#divmin, #divttl {
     margin-bottom: 15px;
 }
 #divmax {
@@ -35,6 +40,12 @@ section {
     padding: .1em .2em;
     font-size: 1.1em;
 }
-#secmos {
-    height: 50vh;
+#divmin > span {
+    width: 110px;
+}
+#divmax > span {
+    width: 110px;
+}
+#divttl > span {
+    width: 110px;
 }
