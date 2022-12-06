@@ -7,6 +7,7 @@
     <title>Exercício 25</title>
     <link rel="stylesheet" href="estilos/style.css" media="screen">
     <link rel="stylesheet" href="estilos/bigstyle.css" media="screen and (min-width:600px)">
+    <link rel="stylesheet" href="estilos/lowstyle.css" media="screen and (max-height:500px)">
 </head>
 <body>
     <main>
@@ -14,7 +15,7 @@
             <div>
                 <div id="divnome">
                     <span>Nome</span>
-                    <input type="text" name="nome" id="nome">
+                    <input maxlength="13" type="text" name="nome" id="nome">
                 </div>
                 <div id="divclasse">
                     <span>Classe</span>
@@ -38,7 +39,7 @@
             <div>
                 <div id="divclassec">
                     <span>Classe</span>
-                    <select name="classec" id="classec">
+                    <select name="escclasse" id="escclasse">
                         <option value="Especialista">Especialista</option>
                         <option value="Combatente">Combatente</option>
                         <option value="Ocultista">Ocultista</option>
@@ -54,14 +55,15 @@
                     <input type="number" name="maxnex" id="maxnex">
                     <span class="por">%</span>
                 </div>
-                <input class="botao" type="button" value="Mostrar">
+                <input class="botao" id="show" type="button" value="Mostrar">
                 <div id="tela">
                     <select name="res" id="res" size="5">
-                        
+                        <option value="">1234567891123 Especialista 25%</option>
                     </select>
                 </div>
             </div>
         </section>
     </main>
+    <script src="exercicio25.js"></script>
 </body>
 </html>
