@@ -6,4 +6,35 @@
 }
 section {
     border: 2px solid black;
+    width: 85vw;
+    padding: 5vw;
+    margin: 30px auto 0 auto;
+    border-radius: 5px;
+    transform: translateY(-15px);
+}
+section > div > div{
+    margin-bottom: 10px;
+}
+section > div > div > input {
+    width: 120px;
+    padding: .1em;
+}
+section > div > div > span {
+    display: inline-block;
+    width: 130px;
+}
+.botao {
+    margin-top: 15px;
+    padding: .2em;
+}
+.por {
+    width: auto;
+}
+#tela {
+    padding: 5px;
+    margin-top: 15px;
+}
+#res {
+    width: 83vw;
+    padding: 1em;
 }

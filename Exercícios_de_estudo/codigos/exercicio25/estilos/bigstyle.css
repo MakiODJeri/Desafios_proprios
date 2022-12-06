@@ -1,0 +1,15 @@
+section {
+    width: 300px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#res {
+    width: 290px;
+}
+main {
+    display: flex;
+    width: 750px;
+    margin: 20vh auto 0 auto;
+}
