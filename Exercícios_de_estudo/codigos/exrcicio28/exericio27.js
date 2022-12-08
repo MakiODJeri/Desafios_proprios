@@ -23,7 +23,7 @@ let resultado = ''
 const teste=(vls,dtteste,bn,mm)=>{
     vls.sort(comparar)
     if (bn == 0) {
-        dtteste = 20
+
     } else  {
         for (let c in vls) {
             vls[c] += bn
@@ -32,10 +32,25 @@ const teste=(vls,dtteste,bn,mm)=>{
         vldados.innerHTML += bn
     }
     if (mm) {
-
+        const conti = vls.some((vl)=>{
+            return vl >= dtteste
+        })
+        if (conti) {
+            resultado = 'Passou no teste'
+        } else {
+            resultado = 'Não passou no teste'
+        }
     } else {
-
+        const conti = vls.some((vl)=>{
+            return vl < dtteste
+        })
+        if (conti) {
+            resultado = 'Não passou no teste'
+        } else {
+            resultado = 'Passou no teste'
+        }
     }
+    vlres.innerHTML = resultado
 }
 const comparar=(a,b)=>{
     return a - b
@@ -43,7 +58,7 @@ const comparar=(a,b)=>{
 const geraraleatorio=(d20)=>{
     valores = []
     for (let c = 1; c <= d20; c++) {
-        valores.push(Math.floor(Math.random() * (20 - 1) + 1))
+        valores.push(Math.floor(Math.random() * (21 - 1) + 1))
     }
     vldados.innerHTML = ''
     vldados.innerHTML += '[ '
@@ -51,7 +66,6 @@ const geraraleatorio=(d20)=>{
         vldados.innerHTML += vl + '... '
     })
     vldados.innerHTML += ']'
-    console.log(valores)
 }
 const plus=(vl,el,max)=>{
     if (vl < max) {
@@ -73,6 +87,10 @@ const minus=(vl,el,min)=>{
         return vl
     }
 }
+const tirapoem=(adci,rmvr)=>{
+    adci.classList.add('marca')
+    rmvr.classList.remove('marca')
+}
 btns[0].addEventListener('click', ()=>{
     vldt = plus(vldt,dt,30)
 })
@@ -93,9 +111,11 @@ btns[5].addEventListener('click', ()=>{
 })
 maiormenor[0].addEventListener('click', ()=>{
     maimen = true
+    tirapoem(maiormenor[0],maiormenor[1])
 })
 maiormenor[1].addEventListener('click', ()=>{
     maimen = false
+    tirapoem(maiormenor[1],maiormenor[0])
 })
 btnrolar.addEventListener('click',()=>{
     geraraleatorio(vlnumd20)

@@ -53,3 +53,13 @@ body {
 #dois {
     transform: translateY(-30px);
 }
+.marca {
+    background-color: green;
+    color: white;
+    text-shadow: 2px 2px 0px black;
+}
+input:active {
+    background-color: green;
+    color: white;
+    text-shadow: 2px 2px 0px black;   
+}
