@@ -14,6 +14,7 @@ input {
     margin: auto;
     border-radius: 10px;
     transform: translateY(15px);
+    background-color: #2d2d2d;
 }
 #corpo > div {
     margin: 5px;
@@ -33,34 +34,39 @@ input {
     box-shadow: 3px 3px 0px inset black;
     border: 2px solid black;
     border-radius: 5px;
+    background-color: rgba(35, 55, 35, 0.547);
 }
 #marca {
     text-align: right;
     border: 0px solid black;
+    color: white;
 }
 #marca > #modelo {
     font-size: 2em;
 }
 #tela {
-    height: 55px;
+    height: 66px;
     box-shadow: 3px 3px 0px inset black;
     border: 1px solid black;
     border-radius: 5px;
     transform: translateY(-2015);
+    background-color: rgba(51, 58, 69, 0.547);
 }
 #btn1 {
     display: flex;
     column-gap: 5px;
     transform: translateY(40px);
     justify-content: space-between;
-    
 }
 #once {
-    width:  80px;
-    height: 80px;
+    width:  18vw;
+    height: 12vh;
     padding: 5px;
     border-radius: 50%;
     font-size: 1.2em;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    background-color: rgb(18, 146, 127);
 }
 #btnm {
     display: grid;
@@ -71,34 +77,40 @@ input {
 #btnm > span {
     font-size: 1.5em;
     transform: translateY(10px);
+    color:rgba(14, 14, 14, 0.691);
 }
 #btnm > input {
     display: block;
     margin: auto;
-    width: 80px;
+    width: 15vw;
     color: transparent;
     border-radius: 50%;
+    background-color: yellow;
 }
 #btn2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;  
     transform: translateY(30px);
-    row-gap: 15px;
+    row-gap: 2vh;
 }
 #mais {
     grid-row: 4/6;
     grid-column: 4/4;
-    width: 80px;
-    height: 135px;
+    width: 18vw;
+    height: 20vh;
     font-size: 3em;
+    background-color: rgb(18, 146, 127);
 }
 #btn2 > input {
     display: block;
     margin: auto;
     border-radius: 10px;
+    color: white;
+    text-shadow: 1px 1px 0px black;
 }
 .botao {
-    width: 80px;
-    height: 60px;
+    width: 18vw;
+    height: 9vh;
     font-size: 1.5em;
+        background-color: rgba(14, 14, 14, 0.691);
 }
