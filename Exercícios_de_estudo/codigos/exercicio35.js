@@ -21,6 +21,7 @@
 //Comida favorita: ${p2.comida_favorita}
 //`)
 class Bloco{
+    jogo='Minecraft'
     constructor(bnome='??',bcor='??',bfuncao=0) {
         this.Nome = bnome
         this.Cor = bcor
@@ -35,6 +36,7 @@ class Bloco{
         }
     }
     info(){
+        console.log(`From: ${this.jogo}`)
         console.log(`Nome: ${this.Nome}`)
         console.log(`Cor: ${this.Cor}`)
         console.log(`Função: ${this.funcao}`)
