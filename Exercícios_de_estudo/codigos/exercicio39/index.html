@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 39</title>
+    <link rel="stylesheet" href="estilos/style.css" media="screen">
+    <link rel="stylesheet" href="estilos/bigstyle.css" media="screen and (min-width: 600px)">
+</head>
+<body>
+    <main>
+        <section id="cadastrar_ferramentas">
+            <p>Nome</p>
+            <input class="digitar" type="text" name="nome" id="nome">
+            <p>Material</p>
+            <input class="digitar" type="text" name="material" id="material">
+            <p>Attack damage</p>
+            <input class="digitar" type="number" name="attack_damage" id="attack_damage">
+            <p>Encantada?</p>
+            <label for="sim_encantada">Sim</label><input type="radio" name="encantada" id="sim_encantada" class="simnao">
+            <label for="nao_encantada">Não</label><input type="radio" name="encantada" id="nao_encantada" class="simnao">
+            <p>Qual o encantamento</p>
+            <select name="opcoes_encantamentos" id="opcoes_encantamentos">
+                <option value="Sharpness">Sharpness</option>
+                <option value="Looting">Looting</option>
+                <option value="Smite">Smite</option>
+                <option value="Sweeping edge">Sweeping edge</option>
+                <option value="Durability">Durability</option>
+            </select> <br>
+            <button id="enviar">Enviar</button>
+        </section>
+        <section>
+            <div id="ferramentas"></div>
+        </section>
+    </main>
+    <script src="exercicio39.js"></script>
+</body>
+</html>
