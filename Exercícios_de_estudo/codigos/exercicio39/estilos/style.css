@@ -53,3 +53,23 @@ select, button {
     box-shadow: 3px 3px 0px grey;
     border: 1px solid black;
 }
+abbr {
+    display: inline-block;
+    width: 1em;
+    font-size: .9em;
+    padding: .1em;
+    background-color: black;
+    color: grey;
+    box-shadow: 2px 2px 0px grey;
+    text-shadow: 1px 1px 0px white;
+    text-decoration: none;
+    text-align: center;
+}
+.ferramenta {
+    width: 70vw;
+    padding: 5px;
+    margin: 5px auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}

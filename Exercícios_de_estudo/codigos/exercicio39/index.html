@@ -17,17 +17,13 @@
             <input class="digitar" type="text" name="material" id="material">
             <p>Attack damage</p>
             <input class="digitar" type="number" name="attack_damage" id="attack_damage">
-            <p>Encantada?</p>
+            <p>Durabilidade</p>
+            <input  class="digitar" type="number" name="durabilidade" id="durabilidade">
+            <p>Encantada <abbr title="Caso seja encantada clique em sim e digite apenas um dos encantamentos na caixa abaixo, caso não apenas ignore a caixa abaixo.">?</abbr> </p>
             <label for="sim_encantada">Sim</label><input type="radio" name="encantada" id="sim_encantada" class="simnao">
-            <label for="nao_encantada">Não</label><input type="radio" name="encantada" id="nao_encantada" class="simnao">
-            <p>Qual o encantamento</p>
-            <select name="opcoes_encantamentos" id="opcoes_encantamentos">
-                <option value="Sharpness">Sharpness</option>
-                <option value="Looting">Looting</option>
-                <option value="Smite">Smite</option>
-                <option value="Sweeping edge">Sweeping edge</option>
-                <option value="Durability">Durability</option>
-            </select> <br>
+            <label for="nao_encantada">Não</label><input type="radio" name="encantada" id="nao_encantada" class="simnao" checked> <br>
+            <input class="digitar" type="text" name="encantamento" id="encantamento">
+            <br>
             <button id="enviar">Enviar</button>
         </section>
         <section>
