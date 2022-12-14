@@ -13,16 +13,20 @@
         <section id="cadastrar_ferramentas">
             <p>Nome</p>
             <input class="digitar" type="text" name="nome" id="nome">
+
             <p>Material</p>
             <input class="digitar" type="text" name="material" id="material">
+
             <p>Attack damage</p>
             <input class="digitar" type="number" name="attack_damage" id="attack_damage">
+
             <p>Durabilidade</p>
             <input  class="digitar" type="number" name="durabilidade" id="durabilidade">
+
             <p>Encantada <abbr title="Caso seja encantada clique em sim e digite apenas um dos encantamentos na caixa abaixo, caso não apenas ignore a caixa abaixo.">?</abbr> </p>
             <label for="sim_encantada">Sim</label><input type="radio" name="encantada" id="sim_encantada" class="simnao">
             <label for="nao_encantada">Não</label><input type="radio" name="encantada" id="nao_encantada" class="simnao" checked> <br>
-            <input class="digitar" type="text" name="encantamento" id="encantamento">
+            <input class="digitar" type="text" name="encantamento" id="encantamento" disabled>
             <br>
             <button id="enviar">Enviar</button>
         </section>

@@ -53,12 +53,40 @@ const limpar=()=>{
     radio_nao.checked = true
 }
 
+const encantada=(sera=undefined)=>{
+    if (sera == undefined) {
+        return 'Não possui'
+    } else {
+        return sera
+    }
+}
+
+const remover_ferramenta=(ferramenta=undefined)=>{
+    let c = 0
+    lista_ferramentas.filter((fer)=>{
+        if (fer == ferramenta) {
+            lista_ferramentas.splice(c,1)
+            criar_mostrar_p()
+        }
+        c++
+    })
+}
+
 const criar_mostrar_p=()=>{
     div_ferramentas.innerHTML = ''
+    let c = 0
     lista_ferramentas.map((ferramenta)=>{
         let p = document.createElement('p')
         p.classList.add('ferramenta')
-        p.innerHTML = `Nome: ${ferramenta.nome}, Material: ${ferramenta.material}, Attack Damage: ${ferramenta.attack_damage}, Durabilidade: ${ferramenta.durabilidade}, Encantamento: ${ferramenta.encantamento}`
+        p.innerHTML = `Nome: ${ferramenta.nome}, Material: ${ferramenta.material}, Attack Damage: ${ferramenta.attack_damage}, Durabilidade: ${ferramenta.durabilidade}, Encantamento: ${encantada(ferramenta.encantamento)}`
+        let btn_rmvr = document.createElement('button')
+        btn_rmvr.innerHTML = 'Remover'
+        btn_rmvr.addEventListener('click', ()=>{
+            remover_ferramenta(ferramenta)
+        })
+        p.innerHTML += '<br>'
+        p.appendChild(btn_rmvr)
+        c++
         div_ferramentas.appendChild(p)
     })
 }
@@ -98,4 +126,11 @@ btn_enviar.addEventListener('click', ()=>{
   } else {
     window.alert('Faltam dados para o cadastro da ferramenta.')
   }
+})
+radio_sim.addEventListener('click', ()=>{
+    input_encantamento.removeAttribute('disabled')
+})
+radio_nao.addEventListener('click', ()=>{
+    input_encantamento.setAttribute('disabled','disable')
+    input_encantamento.value = ''
 })
