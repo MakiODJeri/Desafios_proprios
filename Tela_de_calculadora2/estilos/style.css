@@ -8,7 +8,7 @@ input {
     cursor: pointer;
 }
 body {
-    background-color: #211616;
+    background-color: #221414;
 }
 #corpo {
     border: 2px solid black;
@@ -58,6 +58,14 @@ body {
     transform: translateY(-2015);
     background-color: rgba(51, 58, 69, 0.547);
 }
+#span_tela {
+    display: inline-block;
+    transform: translateY(7px);
+    font-size: 3em;
+    text-align: right;
+    width: 335px;
+
+}
 #btn1 {
     display: flex;
     column-gap: 5px;
@@ -85,7 +93,7 @@ body {
     transform: translateY(10px);
     color:rgba(14, 14, 14, 0.691);
 }
-#btnm > input {
+#btnm > button {
     display: block;
     margin: auto;
     width: 15vw;
@@ -107,7 +115,7 @@ body {
     font-size: 3em;
     background-color: rgb(18, 146, 127);
 }
-#btn2 > input {
+#btn2 > button {
     display: block;
     margin: auto;
     border-radius: 10px;
@@ -118,5 +126,5 @@ body {
     width: 18vw;
     height: 9vh;
     font-size: 1.5em;
-        background-color: rgba(14, 14, 14, 0.691);
+    background-color: rgba(14, 14, 14, 0.691);
 }
