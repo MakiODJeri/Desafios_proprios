@@ -1,0 +1,23 @@
+#corpo {
+    width: 370px;
+    padding: 30px;
+    transform: translateY(100px);
+}
+#onre {
+    width: 80px;
+    height: 75px;
+}
+#btn2 {
+    row-gap: 10px;
+}
+#btnm > button {
+    width: 80px;
+} 
+.botao {
+    width: 80px;
+    height: 60px;
+}
+#mais {
+    width: 80px;
+    height: 135px;
+}

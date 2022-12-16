@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input {
+    cursor: pointer;
+}
+body {
+    background-color: #221414;
+}
+#corpo {
+    border: 2px solid black;
+    width: 85vw;
+    padding: 5vw;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #2d2d2d;
+    box-shadow: 0px 0px 0px 3px black;
+    transform: translateY(15px);
+}
+#corpo > div {
+    margin: 5px;
+    padding: 5px;
+    margin: auto auto 20px auto;
+}
+#extra {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-15px);
+    font-size: 1em;
+}
+#extra > div {
+    width: 38vw;
+    height: 40px;
+}
+#tela2 {
+    box-shadow: 3px 3px 0px inset black;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(35, 55, 35, 0.547);
+}
+#marca {
+    text-align: right;
+    border: 0px solid black;
+    color: white;
+    font-size: .9em;
+}
+#marca > #modelo {
+    font-size: 2.8em;
+}
+#tela {
+    height: 66px;
+    box-shadow: 3px 3px 0px inset black;
+    border: 1px solid black;
+    border-radius: 5px;
+    transform: translateY(-2015);
+    background-color: rgba(51, 58, 69, 0.547);
+}
+#span_tela {
+    display: inline-block;
+    transform: translateY(7px);
+    font-size: 3em;
+    text-align: right;
+    width: 335px;
+
+}
+#btn1 {
+    display: flex;
+    column-gap: 5px;
+    transform: translateY(40px);
+    justify-content: space-between;
+}
+#onre {
+    width:  18vw;
+    height: 18vw;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    background-color: rgb(18, 146, 127);
+}
+#btnm {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+    text-align: center;
+}
+#btnm > span {
+    font-size: 1.5em;
+    transform: translateY(10px);
+    color:rgba(14, 14, 14, 0.691);
+}
+#btnm > button {
+    display: block;
+    margin: auto;
+    width: 15vw;
+    color: transparent;
+    border-radius: 50%;
+    background-color: yellow;
+}
+#btn2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    transform: translateY(30px);
+    row-gap: 5px;
+}
+#mais {
+    grid-row: 4/6;
+    grid-column: 4/4;
+    width: 18vw;
+    height: 20vh;
+    font-size: 3em;
+    background-color: rgb(18, 146, 127);
+}
+#btn2 > button {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+.botao {
+    width: 18vw;
+    height: 9vh;
+    font-size: 1.5em;
+    background-color: rgba(14, 14, 14, 0.691);
+}
