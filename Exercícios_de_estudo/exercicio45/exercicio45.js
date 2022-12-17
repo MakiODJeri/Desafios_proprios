@@ -18,10 +18,13 @@ btn_aba.addEventListener('click', ()=>{
 })
 cpas[1].addEventListener('click', ()=>{
     if (cpas[0].value.length > 0) {
+        //navigator.clipboard.writeText(cpas[0].value)
+        cpas[0].select()
+        cpas[0].setSelectionRange(0,9999999999)
         navigator.clipboard.writeText(cpas[0].value)
         cpas[0].value = ''
     }
 })
 cpas[2].addEventListener('click', ()=>{
-    
+    cpas[0].value = 'Botão inútil'
 })
