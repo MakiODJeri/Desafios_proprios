@@ -4,13 +4,6 @@ const btns_calcjs = [...document.querySelectorAll('.btn_calcjs')]
 const btn_res = document.querySelector('#btn_res')
 let calc = '0'
 let onoff = false
-btns_js.map((btn)=>{
-    console.log(btn.innerHTML)
-})
-btns_calcjs.map((btn)=>{
-    console.log(btn.innerHTML)
-})
-
 const mostrar_tela=(str)=>{
     span_tela.innerHTML = str 
 }
@@ -20,7 +13,6 @@ const calcular=(calculo)=>{
 const remover_zero=(str)=>{
     return str.slice(1)
 }
-
 btns_js[0].addEventListener('click', ()=>{
     if (onoff == false) {
         mostrar_tela(calc)
