@@ -11,12 +11,20 @@ body {
     align-items: center;
 }
 #mensagem {
-    width: 250px;
     border: 5px solid black;
     box-shadow: 3px 3px 6px grey;
     background-color: white;
-    padding: 15px 10px;
+    padding: 15px 20px;
     text-align: center;
+}
+#btn_promise {
+    padding: 3px 5px;
+    margin: 15px 0 0 0;
+    background-color: grey;
+    color: white;
+    text-shadow: 2px 2px 0px balck;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0px grey;
 }
 #bom_dia {
     background-image: linear-gradient(to top right,#58cef2,#acd9e7,#53ccf1);
