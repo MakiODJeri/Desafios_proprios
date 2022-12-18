@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    width: 90vw;
+    padding: 5px;
+    margin: auto;
+    transform: translateY(25vh);
+}
+#corpo_relogio {
+    border: 2px solid black;
+    width: 80vw;
+    padding: 15px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px #282727;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282727;
+    font-size: 2em;
+}
+.num_relogio {
+    border: 2px solid black;
+    width: 10vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border-radius: 15px;
+    background-color: rgb(40, 59, 59);
+    color: black;
+    box-shadow: inset 2px 2px 0px black;
+}
