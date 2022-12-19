@@ -1,0 +1,5 @@
+const total_bolas = document.querySelector('#total_de_bolas')
+const input_num_bolas = document.querySelector('#num_de_bolas')
+const btn_adci = document.querySelector('#adci_bolas')
+const btn_rmvr = document.querySelector('#rmvr_tudo')
+const tela = document.querySelector('#tela_bolas')
