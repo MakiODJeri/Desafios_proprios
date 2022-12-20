@@ -1,12 +1,10 @@
 #controles {
-    width: 890px;
+    width: 100vw;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 #controles > div {
-    width: 250px;
-}
-#tela > div {
-    width: 875px;
+    width: 300px;
+    margin: 15px 5px 0 5px;
 }
