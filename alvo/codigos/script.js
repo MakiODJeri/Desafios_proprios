@@ -40,7 +40,7 @@ const iniciar_contagem=()=>{
 }
 const criar_bola=(x,y,id)=>{
     let bola = document.createElement('div')
-    bola.setAttribute('style',`transform-origin: center center; position: absolute; background-color: pink; border: 2px solid black; border-radius: 50%; width: ${tamanho_bola}px; height: ${tamanho_bola}px; left: ${x}px; top: ${y}px;`)
+    bola.setAttribute('style',`transform-origin: center center; position: absolute; background-color: #da0909; border: 2px solid black; border-radius: 50%; width: ${tamanho_bola}px; height: ${tamanho_bola}px; left: ${x}px; top: ${y}px;`)
     bola.setAttribute('id',id)
     bola.addEventListener('click', ()=>{
         if (pontuacao == 0 && tempo > 0) {
