@@ -27,6 +27,7 @@ button {
     border: 4px solid black;
     padding: 5px;
     margin: 10px auto;
+    position: relative;
 }
 footer {
     text-align: center;
