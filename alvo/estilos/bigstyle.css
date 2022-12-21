@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 10vh auto 0 auto;
+}
+.div_header {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    margin-right: 5px;
+}
+#tela {
+    max-width: 800px;
+}
+footer {
+    font-size: 1em;
+}
