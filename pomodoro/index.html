@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="estilos/style.css" media="screen">
+    <link rel="stylesheet" href="estilos/bigstyle.css" media="screen and (min-width: 600px)">
+</head>
+<body>
+    <header>
+        <div id="infos">
+            <p id="horario">00:00</p>
+            <p id="data">Segunda-feira 12/21</p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="div_timers">
+                <button id="timer_pomodoro">Pomodoro</button>
+                <button id="timer_pausaCurta">Pausa curta</button>
+                <button id="timer_pausaLonga">Pausa longa</button>
+            </div>
+            <div id="div_contador">
+                <p id="contador">00:00</p>
+            </div>
+            <div id="div_iniciar">
+                <button id="btn_iniciar">Iniciar</button>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div id="config_timers">
+                    <div>
+                        <p>Pomodoro</p>
+                        <input type="number" name="valor_pomodoro" id="valor_pomodoro">
+                    </div>
+                    <div>
+                        <p>Pausa curta</p>
+                        <input type="number" name="valor_pausaCurta" id="valor_pausaCurta">
+                    </div>
+                    <div>
+                        <p>Pausa Longa</p>
+                        <input type="number" name="valor_pausaLonga" id="valor_pausaLonga">
+                    </div>
+                </div>
+                <button id="atualizar_timers">Atualizar</button>
+            </div>
+            <div id="config_pausa">
+                <p>Pausas automáticas</p>
+                <button id="btn_ativarAuto">ativar</button>
+            </div>
+        </section>
+    </main>
+    <footer><p>Página criada por <a href="https://github.com/MakiODJeri" hreflang="en" target="_self" rel="external">Kauã O.S. (MakiODJeri)</a></p></footer>
+</body>
+</html>

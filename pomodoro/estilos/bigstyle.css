@@ -1,0 +1,25 @@
+#infos {
+    width: 300px;
+    margin: auto;
+}
+main {
+    padding-top: 5vh;
+}
+#config_timers {
+    width: 400px;
+    margin: auto;
+    justify-content: center;
+}
+#atualizar_timers {
+    display: block;
+    margin: 10px auto 15px auto;
+}
+#config_pausa {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+section {
+    width: 500px;
+    margin: auto auto 8px auto;
+}

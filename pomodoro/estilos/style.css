@@ -1,0 +1,88 @@
+/*:root {
+
+}*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    padding: 30px; 
+}
+#infos {
+    border: 4px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+#horario {
+    font-size: 4em;
+}
+#data {
+    margin-bottom: 15px;
+}
+main {
+    padding: 10px 30px 30px 30px;
+}
+section {
+    border: 4px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 8px;
+}
+#div_timers {
+    text-align: center;
+}
+#div_timers > button {
+    width: 100px;
+    padding: 2px 0;
+    margin: 8px 5px 0 5px;
+    border-radius: 5px;
+}
+#contador {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 6em;
+}
+#div_iniciar {
+    text-align: center;
+}
+#btn_iniciar {
+    padding: 3px 8px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+#config_timers {
+    display: flex;
+    text-align: center;
+}
+#config_timers > div > p {
+    display: inline-block;
+    width: 100px;
+}
+#config_timers > div > input {
+    width: 100px;
+    padding: 3px;
+}
+#atualizar_timers {
+    width: 80px;
+    padding: 3px 6px;
+    margin: 10px 0 15px 0;
+}
+#btn_ativarAuto {
+    width: 80px;
+    padding: 1px 6px;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+footer {
+    padding-bottom: 30px;
+    text-align: center;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
