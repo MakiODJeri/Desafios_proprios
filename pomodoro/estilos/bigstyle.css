@@ -2,13 +2,17 @@
     width: 300px;
     margin: auto;
 }
-main {
-    padding-top: 5vh;
-}
 #config_timers {
     width: 400px;
     margin: auto;
     justify-content: center;
+}
+#config_timers > div > p {
+    width: 95px;
+}
+#config_timers > div > input {
+    width: 100px;
+    padding: 3px;
 }
 #atualizar_timers {
     display: block;
