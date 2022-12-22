@@ -40,11 +40,15 @@ const contagem_timer=()=>{
         tempo.diminuirValAtivado()
         p_contador.innerHTML = atualizar_timer(tempo.val_ativado)
     }
-    if (tempo.val_ativado == 0) {
+    if (tempo.val_ativado == 0 && tempo.pausasAuto == false) {
         btn_iniciar.innerHTML = 'Iniciar'
         clearInterval(contagem)
         tempo.ligar(false)
         p_contador.innerHTML = mostrar_val_timer()
+    } else if (tempo.val_ativado == 0) {
+        clearInterval(contagem)
+        tempo.ligar(false)
+        tocar_timer()
     }
 }
 
