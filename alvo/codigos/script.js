@@ -64,6 +64,15 @@ const criar_centro=(x=(largura_tela-tamanho_bola)/2,y=(altura_tela-tamanho_bola)
 window.addEventListener('resize', ()=>{
     largura_tela = div_tela.offsetWidth
     altura_tela = div_tela.offsetHeight
+    clearInterval(contagem)
+    tempo = 60
+    pontuacao = 0
+    lista_bolas.map((bola)=>{
+        bola.remover()
+    })
+    criar_centro()
+    mostrar_tempo()
+    mostrar_pontuacao(pontuacao)
 })
 class Bola {
     constructor(x=pos_aleatoria(largura_tela,tamanho_bola),y=pos_aleatoria(altura_tela,tamanho_bola),id=criar_id()) {
