@@ -5,7 +5,7 @@ const gerarAleatorio = function (min,max) {
 }
 
 //function declarations
-function isPar(n) {
+/*function isPar(n) {
     if (n%2 == 0) {
         return true
     } else {
@@ -31,14 +31,19 @@ const parOrImpar = (n) => {
 }
 
 const dol  = val => val * 6
-const real = val => val / 6
+const real = val => val / 6*/
 
 const myNumber = {
-    isPar: function(n){
-        
-        return n%2 == 0
+    IaN: function (n) {
+        return !isNaN(n)
     },
-    isImpar: n => n%2 != 0
+    isPar: function (n) {
+        return `${n} é par? ${this.IaN(n) && n%2 == 0}`
+    },
+    isImpar: function (n) { 
+        return `${n} é impar? ${this.IaN(n) && n%2 != 0}`
+         
+    }
 }
 //res
 /*console.log(isPar(gerarAleatorio(1,100)))
