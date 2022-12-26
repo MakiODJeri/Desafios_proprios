@@ -98,3 +98,56 @@ a {
     text-decoration: none;
     color: black;
 }
+.Pm_corpo {
+    background-color: #FF7D81;
+}
+.Pm_divs_pontas {
+    background-color: #CC272C;
+    border: 4px solid #80181C;
+}
+.Pm_div_centro {
+    background-color: #FF3038;
+    border: 4px solid #80181C;
+}
+.Pm_footer {
+    color: #CC272C;
+}
+.Pm_footer > a {
+    color: #80181C;
+}
+
+.Pl_corpo {
+    background-color: #235C56;
+}
+.Pl_divs_pontas {
+    background-color: #27662A;
+    border: 4px solid #225031;
+}
+.Pl_div_centro {
+    background-color: #27664E;
+    border: 4px solid #225031;
+}
+.Pl_footer {
+    color: #27662A;
+}
+.Pl_footer > a {
+    color: #225031;
+}
+
+.Pc_corpo {
+    background-color: #B6D656;
+}
+.Pc_divs_pontas {
+    background-color: #63F787;
+    border: 4px solid #5CD656;
+}
+.Pc_div_centro {
+    background-color: #9EEC6B;
+    border: 4px solid #5CD656;
+}
+.Pc_footer {
+    color: #9EEC6B;
+}
+.Pc_footer > a {
+    color: #5CD656;
+}

@@ -10,7 +10,6 @@ const input_valorPc = document.querySelector('#valor_pausaCurta')
 const input_valorPl = document.querySelector('#valor_pausaLonga')
 const btn_atualizar = document.querySelector('#atualizar_timers')
 const btn_ativarAuto = document.querySelector('#btn_ativarAuto')
-
 const dia_da_semana=(val)=>{
     let dias = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado']
     return dias[val]
@@ -61,6 +60,16 @@ const mostrar_val_timer=()=>{
         return atualizar_timer(tempo.pomodoro)
     }
 }
+//mudar_estilo(tempo.val_ativado)
+const mudar_estilo=(val)=>{
+    if (val == tempo.pausaLonga) {
+
+    } else if (val == tempo.pausaCurta) {
+
+    } else {
+    
+    }
+}
 
 const tocar_timer=(on)=>{
     if (tempo.ligado == false) {
@@ -94,7 +103,7 @@ class Timer {
         this.resets = 0
         this.pausasAuto = false
         this.ligado = false
-        this.val_ativado = 0
+        this.val_ativado = this.pomodoro
     }
     setPomodoro=(pomodoro)=>{
         this.pomodoro = pomodoro*60
@@ -127,6 +136,7 @@ let tempo =new Timer(25,5,15)
 p_contador.innerHTML = mostrar_val_timer()
 let contagem = setInterval(tocar_timer,1000)
 clearInterval(contagem)
+mudar_estilo(tempo.val_ativado)
 
 
 
