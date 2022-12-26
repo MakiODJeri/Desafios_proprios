@@ -25,17 +25,18 @@ main {
 section {
     border: 4px solid black;
     border-radius: 5px;
-    padding: 15px;
+    padding: 3vh 5vw;
     margin-bottom: 8px;
 }
 #div_timers {
     text-align: center;
 }
 #div_timers > button {
-    width: 100px;
+    width: 19vw;
     padding: 2px 0;
     margin: 8px 5px 0 5px;
     border-radius: 5px;
+    font-size: .9em;
 }
 #contador {
     text-align: center;
@@ -46,11 +47,15 @@ section {
     text-align: center;
 }
 #btn_iniciar {
-    width: 90px;
-    padding: 3px 8px;
+    width: 22vw;
+    padding: 3px 0;
     font-size: 1.1em;
     border-radius: 5px;
     margin-bottom: 8px;
+}
+#configs > p {
+    text-align: center;
+    padding-bottom: 10px;
 }
 #config_timers {
     display: flex;
@@ -58,27 +63,36 @@ section {
 }
 #config_timers > div > p {
     display: inline-block;
-    width: 22.5vw;
+    width: 21vw;
+    font-size: .9em;
 }
 #config_timers > div > input {
     padding: 3px;
-    width: 22.5vw;
+    width: 16.5vw;
     text-align: center;
 }
 #atualizar_timers {
-    width: 90px;
+    display: block;
+    width: 16.5vw;
     padding: 3px 6px;
-    margin: 10px 0 15px 0;
+    margin: 10px auto 15px auto;
+}
+#config_pausa > p {
+    text-align: center;
 }
 #btn_ativarAuto {
-    width: 90px;
+    display: block;
+    width: 16.5vw;
     padding: 1px 6px;
     font-size: 1.1em;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;;
 }
 footer {
     text-align: center;
     color: black;
+    padding-bottom: 30px;
 }
 a {
     text-decoration: none;
