@@ -1,9 +1,13 @@
+button {
+    width: 112px;
+}
 #infos {
     width: 300px;
     margin: auto;
 }
 #div_timers {
     width: 300px;
+    margin: auto;
 }
 #btn_iniciar {
     width: 100px;
@@ -11,26 +15,21 @@
 #config_timers {
     display: flex;
     width: 400px;
-    margin: auto;
+    margin: 5px auto 0 auto;
     justify-content: center;
 }
 #config_timers > div > p {
-    ;
+    width: 112px
 }
 #config_timers > div > input {
-    width: 100px;
+    width: 112px;
     padding: 3px;
 }
 #atualizar_timers {
     display: block;
     margin: 10px auto 15px auto;
-    width: 112px;
-}
-#btn_ativarAuto {
-    width: 112px;
 }
 #config_pausa {
-    max-width: 400px;
     margin: auto;
     text-align: center;
 }

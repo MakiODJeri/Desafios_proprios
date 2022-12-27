@@ -60,18 +60,20 @@ section {
     display: flex;
     margin: 5px 0 0 0;
     text-align: center;
+    justify-content: center;
 }
 #config_timers > div > p {
-    width: 28.5vw;
+    width: 24vw;
     margin: 0 3px 0 3px;
+    padding: 0 5px;
 }   
 #config_timers > div > input {
-    width: 26vw;
+    width: 24vw;
     margin: 0 3px 0 3px;
     padding: 5px;
 }
 #atualizar_timers {
-    margin: 5px auto 15px auto;   
+    margin: 10px auto 15px auto;   
 }
 #config_pausa > p {
     text-align: center;
