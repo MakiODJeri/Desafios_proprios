@@ -31,6 +31,9 @@ section {
 }
 #div_timers {
     text-align: center;
+    display: flex;
+    width: 62vw;
+    margin: auto;
 }
 #div_timers > button {
     width: 19vw;
@@ -48,7 +51,7 @@ section {
     text-align: center;
 }
 #btn_iniciar {
-    width: 22vw;
+    width: 16.5vw;
     padding: 3px 0;
     font-size: 1.1em;
     border-radius: 5px;
@@ -59,7 +62,6 @@ section {
     padding-bottom: 10px;
 }
 #config_timers {
-    border: 2px solid black;
     max-width: 58.5vw;
     display: flex;
     text-align: center;

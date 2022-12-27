@@ -2,7 +2,14 @@
     width: 300px;
     margin: auto;
 }
+#div_timers {
+    width: 300px;
+}
+#btn_iniciar {
+    width: 100px;
+}
 #config_timers {
+    display: flex;
     width: 400px;
     margin: auto;
     justify-content: center;
@@ -17,6 +24,10 @@
 #atualizar_timers {
     display: block;
     margin: 10px auto 15px auto;
+    width: 112px;
+}
+#btn_ativarAuto {
+    width: 112px;
 }
 #config_pausa {
     width: 400px;
