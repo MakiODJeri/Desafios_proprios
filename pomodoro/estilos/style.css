@@ -8,7 +8,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 header {
-    padding: 3vh 5px 5px 5px; 
+    margin: 5vh 0 5px 0;
+}
+main {
+    margin: 0 0 5px 0;
+}
+button {
+    display: block;
+    margin: 5px auto 0 auto;
+    padding: 3px 0;
+    width: 30vw;
 }
 #infos {
     max-width: 100vw;
@@ -20,82 +29,52 @@ header {
 #horario {
     font-size: 4em;
 }
-main {
-    padding: 0px 5px 10px 5px;
-}
 section {
     border: 4px solid black;
-    border-radius: 5px;
-    padding: 3vh 5vw;
-    margin-bottom: 8px;
+    max-width: 100vw;
+    padding: 15px;
+    margin-bottom: 5px;
 }
 #div_timers {
-    text-align: center;
-    display: flex;
-    width: 62vw;
-    margin: auto;
+    display: flex;   
 }
 #div_timers > button {
-    width: 19vw;
-    padding: 2px 0;
-    margin: 8px 5px 0 5px;
-    border-radius: 5px;
-    font-size: .9em;
+    width: 30vw;
+    margin: 0 3px 0 3px;
 }
 #contador {
+    font-size: 7em;
     text-align: center;
-    margin: 15px 0;
-    font-size: 6em;
-}
-#div_iniciar {
-    text-align: center;
+    margin: 5px 0 5px 0;   
 }
 #btn_iniciar {
-    width: 16.5vw;
+    width: 30vw;
     padding: 3px 0;
-    font-size: 1.1em;
-    border-radius: 5px;
-    margin-bottom: 8px;
+    display: block;
+    margin: auto;
 }
 #configs > p {
     text-align: center;
-    padding-bottom: 10px;
 }
 #config_timers {
-    max-width: 58.5vw;
     display: flex;
+    margin: 5px 0 0 0;
     text-align: center;
-    justify-content: center;
-    margin: auto;
 }
 #config_timers > div > p {
-    display: inline-block;
-    width: 20vw;
-    font-size: .9em;
-    
-}
+    width: 28.5vw;
+    margin: 0 3px 0 3px;
+}   
 #config_timers > div > input {
-    padding: 3px;
-    width: 16.5vw;
-    text-align: center;
+    width: 26vw;
+    margin: 0 3px 0 3px;
+    padding: 5px;
 }
 #atualizar_timers {
-    display: block;
-    width: 16.5vw;
-    padding: 3px 6px;
-    margin: 10px auto 15px auto;
+    margin: 5px auto 15px auto;   
 }
 #config_pausa > p {
     text-align: center;
-}
-#btn_ativarAuto {
-    display: block;
-    width: 16.5vw;
-    padding: 1px 6px;
-    font-size: 1.1em;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;;
 }
 footer {
     text-align: center;

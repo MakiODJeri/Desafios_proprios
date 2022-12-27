@@ -15,7 +15,7 @@
     justify-content: center;
 }
 #config_timers > div > p {
-    width: 95px;
+    ;
 }
 #config_timers > div > input {
     width: 100px;
@@ -30,11 +30,11 @@
     width: 112px;
 }
 #config_pausa {
-    width: 400px;
+    max-width: 400px;
     margin: auto;
     text-align: center;
 }
 section {
-    width: 500px;
+    max-width: 500px;
     margin: auto auto 8px auto;
 }

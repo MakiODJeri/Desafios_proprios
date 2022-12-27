@@ -14,6 +14,17 @@ const dia_da_semana=(val)=>{
     let dias = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado']
     return dias[val]
 }
+
+const colorir=()=>{
+    if (tempo.val_ativado == tempo.pomodoro) {
+
+    } else if (tempo.val_ativado == tempo.pausaCurta) {
+
+    } else if (tempo.val_ativado == tempo.pausaLonga) {
+        
+    }
+}
+
 const atualizar_horaEdata=()=>{
     let horario =new Date().getHours()<10?'0' + new Date().getHours(): new Date().getHours()
     horario += ':'
