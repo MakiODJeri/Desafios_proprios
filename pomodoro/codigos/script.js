@@ -10,6 +10,13 @@ const input_valorPc = document.querySelector('#valor_pausaCurta')
 const input_valorPl = document.querySelector('#valor_pausaLonga')
 const btn_atualizar = document.querySelector('#atualizar_timers')
 const btn_ativarAuto = document.querySelector('#btn_ativarAuto')
+const body = document.querySelector('body')
+const header = document.querySelector('#top')
+const main_section = document.querySelector('#center')
+const mainLast_section = document.querySelector('#mainLast')
+const btns = [...document.querySelectorAll('.btns')]
+const footer = document.querySelector('#footer')
+const footer_a = document.querySelector('#footer_a')
 const dia_da_semana=(val)=>{
     let dias = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado']
     return dias[val]
@@ -21,7 +28,7 @@ const colorir=()=>{
     } else if (tempo.val_ativado == tempo.pausaCurta) {
 
     } else if (tempo.val_ativado == tempo.pausaLonga) {
-        
+
     }
 }
 
