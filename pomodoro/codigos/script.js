@@ -11,18 +11,33 @@ const input_valorPl = document.querySelector('#valor_pausaLonga')
 const btn_atualizar = document.querySelector('#atualizar_timers')
 const btn_ativarAuto = document.querySelector('#btn_ativarAuto')
 const body = document.querySelector('body')
-const header = document.querySelector('#top')
+const header = document.querySelector('#infos')
 const main_section = document.querySelector('#center')
 const mainLast_section = document.querySelector('#mainLast')
 const btns = [...document.querySelectorAll('.btns')]
-const footer = document.querySelector('#footer')
-const footer_a = document.querySelector('#footer_a')
+const footer = document.querySelector('footer')
+
+const classes1 = ['','','','','']
+const classes2 = ['','','','','']
+const classes3 = ['','','','','']
+
 const dia_da_semana=(val)=>{
     let dias = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado']
     return dias[val]
 }
 
+const mudar_estilo=(addClasses,rmv1Classes,rmv2Classes)=>{
+    body.classList.remove(rmv1Classes[0],rmv2Classes[0])
+    body.classList.add(addClasses[0])
+}
+
 const colorir=()=>{
+    console.log(body)
+    console.log(header)
+    console.log(main_section)
+    console.log(mainLast_section)
+    console.log(btns)
+    console.log(footer)
     if (tempo.val_ativado == tempo.pomodoro) {
 
     } else if (tempo.val_ativado == tempo.pausaCurta) {
@@ -78,17 +93,6 @@ const mostrar_val_timer=()=>{
         return atualizar_timer(tempo.pomodoro)
     }
 }
-//mudar_estilo(tempo.val_ativado)
-const mudar_estilo=(val)=>{
-    if (val == tempo.pausaLonga) {
-
-    } else if (val == tempo.pausaCurta) {
-
-    } else {
-    
-    }
-}
-
 const tocar_timer=(on)=>{
     if (tempo.ligado == false) {
         tempo.novoReset(1)
@@ -154,7 +158,7 @@ let tempo =new Timer(25,5,15)
 p_contador.innerHTML = mostrar_val_timer()
 let contagem = setInterval(tocar_timer,1000)
 clearInterval(contagem)
-mudar_estilo(tempo.val_ativado)
+colorir()
 
 
 
