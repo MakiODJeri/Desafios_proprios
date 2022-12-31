@@ -40,8 +40,8 @@ const agente3 = {
 function getBirthYear(age) {
     return new Date().getFullYear() - age
 }
-function showAgentInfo(agent) {
-    console.log(`${agent.nome} nasceu em ${getBirthYear(agent.idade)}, possui ${agent.nex}% de nex, da classe ${agent.classe}, ${agent.trilha!=undefined?`trilha ${agent.trilha}`:'ainda não possui trilha'}`)
+function showAgentInfo({nome,idade,nex,classe,trilha}) {
+    console.log(`${nome} nasceu em ${getBirthYear(idade)}, possui ${nex}% de nex, da classe ${classe}, ${trilha!=undefined?`trilha ${trilha}`:'ainda não possui trilha'}`)
 }
 showAgentInfo(agente1)
 showAgentInfo(agente2)
