@@ -136,16 +136,36 @@ const githubApiRequest = ({name}) =>
     })
     .catch(err => console.log(err))
 console.log(githubApiRequest(user1))*/
-const convertToHex = colorName => ({
+
+/*const convertToHex = colorName => ({
     'red': '#A31419',
     'green': '#10A337',
     'blue': '#4C91F0',
     'yellow': '#F0EA6F',
-})[colorName.toLowerCase()] || `Erro: "${colorName}" não encontrada no objeto."`
+})[colorName.toLowerCase()] || `Erro: "${colorName}" não encontrada no objeto."`*/
 
-const convertToHex = color
+const convertToHex = colorName => {
+    const colors = {
+        'red': '#A31419',
+        'green': '#10A337',
+        'blue': '#4C91F0',
+        'yellow': '#F0EA6F',
+    }
+    return colors[colorName.toLowerCase()]? 
+        `${colorName} em hexadecimal é ${colors[colorName.toLowerCase()]}.` 
+        : `Erro: "${colorName}" não encontrada no objeto."`
+}
 
-const inputColors = ['red','brown','black','blue','purple','yellow']
+const inputColors = [
+    'red',
+    'brown',
+    'black',
+    'blue',
+    'purple',
+    'yellow'
+]
 //const inputColors = 'red'
 
-const res = typeof inputColors == 'object' ? inputColors.forEach(color => console.log(convertToHex(color))): console.log(convertToHex(inputColors))
+const res = typeof inputColors == 'object' ? 
+    inputColors.forEach(color => console.log(convertToHex(color)))
+    : console.log(convertToHex(inputColors))
