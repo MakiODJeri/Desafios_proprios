@@ -1,0 +1,102 @@
+:root {
+    --cor0: #040c06;
+    --cor1: #112318;
+    --cor2: #305d42;
+    --cor3: #4d8061;
+    --cor4: #bedc7f;
+    --cor5: #eeffcc;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: var(--cor0);
+}
+main > section {
+    background: var(--cor1);
+    color: white;
+    padding: 30px;
+    margin: 10px auto;
+    box-shadow: 3px 3px 3px var(--cor3);
+}
+#mainDiv {
+    background: var(--cor0);
+    width: 80vw;
+    padding: 15px;
+    margin: auto;
+    border: 5px solid var(--cor2);
+    box-shadow: 2px 2px 1px var(--cor3);
+    border-radius: 5px;
+}
+#userAvatarDiv {
+    background-size: 50vw 50vw;
+    width: 50vw;
+    height: 50vw;
+    background: var(--cor5);
+    border: 4px solid var(--cor3);
+    border-radius: 50%;
+    margin: auto auto 15px auto;
+}
+#userNameA {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--cor5);
+}
+#formDiv {
+    background-color: var(--cor0);
+    border: 5px solid var(--cor2);
+    padding: 15px;
+    box-shadow: 2px 2px 1px var(--cor3);
+    border-radius: 5px;
+    margin: auto;
+}
+#formDiv > p {
+    margin: auto auto auto 5px;
+    color: var(--cor5);
+    font-size: 1.1em;
+}
+form {
+    margin: 10px auto auto auto;
+}
+#getUser {
+    display: block;
+    background: var(--cor5);
+    border: 2px solid var(--cor2);
+    box-shadow: 2px 2px 1px var(--cor3);
+    width: 96%;
+    margin: auto auto 10px auto;
+    border-radius: 10px;
+    padding: 3px 5px;
+}
+#submit {
+    background: var(--cor1);
+    color: var(--cor5);
+    display: block;
+    margin:  auto auto 10px auto;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: 2px solid var(--cor2);
+    box-shadow: 1px 1px 0px var(--cor3);
+}
+footer {
+    background: var(--cor2);
+    color: var(--cor5);
+    border: 4px solid var(--cor1);
+    box-shadow: 1px 1px 1px var(--cor3);
+    padding: 5px 3px;
+    border-radius: 10px;
+    margin: auto 15px;
+    text-align: center;
+}
+abbr {
+    text-decoration: none;
+    margin: auto auto auto 15px;
+    background: var(--cor1);
+    padding: 2px;
+    box-shadow: 1px 1px 0px var(--cor2);
+}
