@@ -6,7 +6,7 @@
     "configurations": [
          {
             "name": "Launch Program",
-            "program": "${workspaceFolder}/exercicio91.js",
+            "program": "${workspaceFolder}/exercicio92.js",
             "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"

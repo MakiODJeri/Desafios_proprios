@@ -1,0 +1,16 @@
+'{"firstName": "Mia","lastName": "Arthur"}'
+'{"firstName": "Antonio","lastName": "Rubens"}'
+'{"firstName": "Tristan","lastName": "Beatrice"}'
+'{"firstName": "Erick","lastName": "Henrique"}'
+
+db.agents.find({class: 'Specialist'}).project({nome: true, class: true, ;nex: true})
+db.agents.find({nex: '5'}).project({nome: true, class: true, ;nex: true})
+
+[A-Z]+\s([a-z]+),\s([a-z]+),\s([a-z]+)\s[A-Z]+\s([a-z]+)\s[A-Z]+\s([a-z]+)\s=\s(['][\w]+['])
+
+SELECT/ nome, class, nex FROM agents WHERE class = 'Specialist'
+SELECT/ nome, class, nex FROM agents WHERE nex = '5'
+
+db.agents.find({class: 'Specialist'}).project({name: true, class: true, nex: true})
+
+db.agents.find({$5: $6}).project({$1: true, $2: true, ;$3: true})
